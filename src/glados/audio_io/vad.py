@@ -2,11 +2,11 @@ from pathlib import Path
 
 import numpy as np
 from numpy.typing import NDArray
-import onnxruntime as ort
+import onnxruntime as ort  # type: ignore
 
 from ..utils.resources import resource_path
 
-# Default OnnxRuntime is way to verbose
+# Default OnnxRuntime is way to verbose, only show fatal errors
 ort.set_default_logger_severity(4)
 
 
@@ -17,7 +17,7 @@ class VAD:
     def __init__(self, model_path: Path = VAD_MODEL) -> None:
         """Initialize a Voice Activity Detection (VAD) model with an ONNX runtime inference session.
 
-        Parameters:
+        Args:
             model_path (str, optional): Path to the ONNX VAD model. Defaults to VAD_MODEL.
 
         Notes:

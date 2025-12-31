@@ -202,7 +202,11 @@ To use these new settings, use the command:
 1. If you find you are getting stuck in loops, as GLaDOS is hearing herself speak, you have two options:
    1. Solve this by upgrading your hardware. You need to you either headphone, so she can't physically hear herself speak, or a conference-style room microphone/speaker. These have hardware sound cancellation, and prevent these loops.
    2. Disable voice interruption. This means neither you nor GLaDOS can interrupt when GLaDOS is speaking. To accomplish this, edit the `glados_config.yaml`, and change `interruptible:` to  `false`.
-2. If you want to the the Text UI, you should use the glados-ui.py file instead of glado.py
+2. If you get the following error:
+
+    `ImportError: DLL load failed while importing onnxruntime_pybind11_state`
+   
+   you can fix it by installing the latest [Microsoft Visual C++ Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
 
 
 ## Testing the submodules
@@ -211,3 +215,19 @@ Want to mess around with the AI models? You can test the systems by exploring th
 
 ## Star History
 [![Star History Chart](https://api.star-history.com/svg?repos=dnhkng/GlaDOS&type=Date)](https://star-history.com/#dnhkng/GlaDOS&Date)
+
+
+## Sponsors
+Companies supporting the development of GLaDOS:
+
+<div align="center">
+
+### [Wispr Flow](https://ref.wisprflow.ai/qbHPGg8)
+
+[![Sponsor](https://raw.githubusercontent.com/dnhkng/assets/refs/heads/main/Flow-symbol.svg)](https://ref.wisprflow.ai/qbHPGg8)
+
+[**Talk to code, stay in the Flow.**](https://ref.wisprflow.ai/qbHPGg8)
+
+[Flow is built for devs who live in their tools. Speak and give more context, get better results.](https://ref.wisprflow.ai/qbHPGg8)
+
+</div>
